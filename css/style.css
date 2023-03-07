@@ -75,6 +75,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -89,6 +90,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .bg-change {
@@ -168,9 +171,6 @@ a {
  * こだわりセクション
  *============================*/
 
-.obsession {
-}
-
 .sec-title--dark {
     text-align: center;
 }
@@ -185,6 +185,28 @@ a {
     margin: 0 auto;
 }
 
+.flex02 .flex02__item .flex02__item__title {
+    margin-top: 18px;
+}
+
 .flex02 .flex02__item .flex02__item__text {
     width: 320px;
+    margin-top: 18px;
+}
+.flex02 .flex02__item .flex02__item__img {
+    border-radius: 20px;
+    background: var(--bg-icon);
+    size: 10px;
+}
+
+/*========================================
+ * 機能セクション
+ *======================================*/
+
+.function .flex03 {
+    margin-left: auto;
+}
+
+.flex03__item:nth-of-type(2) {
+    margin-right: auto;
 }
