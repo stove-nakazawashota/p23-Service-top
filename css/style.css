@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+:root {
+    /* 背景色 */
+    --bg-base: #FFF;
+    --bg-light: #ECEFF4;
+    --bg-dark: #2D3440;
+    --bg-button: #4C566A;
+    --bg-button-hover: #2E3440;
+    --bg-icon: #D8DEE9;
+
+    /* アイコンの色 */
+    --icon: #5E81AC;
+    --icon-light: #ECEFF4;
+
+    /* 文字色 */
+    --font-light: #ECEFF4;
+    --font-base: #4C566A;
+
+    /* ロゴの色 */
+    --logo: #4C566A;
+}
+
+/* 初期設定 */
+html {
+    font-size: 100%;
+    color: var(--font-base);
+}
+
+body {
+    background-color: var(--bg-base);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--font-base);
+    text-decoration: none;
+}
+
+/* レイアウト */
+.wrapper {
+    /* max-width: 1080px; */
+    margin: 0 auto;
+}
+
+.layout {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*ボタン*/
+.btn {
+    background: var(--bg-button);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0 auto; */
+    max-width: 180px;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/*=============================
+ * Header 
+ *============================*/
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/*======================================
+ * Main
+ *====================================*/
+
+/*----page-top------------------------*/
+
+.flex01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-change {
+    background-color: var(--bg-light);
+}
+
+.flex__left {
+    margin: 0 18px;
+}
+
+.flex01 .flex__left .flex__left__title {
+    font-size: 38px;
+    line-height: 1.75;
+
+}
+
+.flex01 .flex__left .flex__left__catch {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.75;
+    position: relative;
+}
+
+.flex01 .flex__left .flex__left__catch::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .5em;
+    left: -1.5em;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid #9c9c9c;
+    border-bottom: 3px solid #9c9c9c;
+    transform: rotate(-45deg);
+}
+
+.flex01 .flex__right {
+    width: 480px;
+}
+
+.register_btn {
+    margin-top: 20px;
+    position: relative;
+}
+
+.regiter_btn::after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1px;
+    width: 15px; /* 棒の長さ */
+    height: 3px; /* 棒の太さ */
+    background: #fff;
+}
+
+.register_btn::before {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2px;
+    width: 13px;    /* くの字を山なりに見た時、左側の長さ */
+    height: 13px;   /* くの字を山なりに見た時、右側の長さ */
+    border-top: 3px solid #fff;     /* くの字を山なりに見た時、左側の太さと色 */
+    border-right: 3px solid #fff;   /* くの字を山なりに見た時、右側の太さと色 */
+    transform: rotate(45deg);    /* くの字の向き */
+}
+
+/* .top .top__wave-img {
+    display: block;
+} */
+
+/*==============================
+ * こだわりセクション
+ *============================*/
+
+.obsession {
+}
+
+.sec-title--dark {
+    text-align: center;
+}
+
+.flex02 {
+    display: flex;
+    margin: 0 auto;
+}
+
+.flex02__item {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.flex02 .flex02__item .flex02__item__text {
+    width: 320px;
+}
