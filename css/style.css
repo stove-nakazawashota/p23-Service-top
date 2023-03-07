@@ -41,14 +41,17 @@ a {
 }
 
 /* レイアウト */
-.wrapper {
+
+.layout {
     /* max-width: 1080px; */
+    /* width: 90%; */
     margin: 0 auto;
 }
 
-.layout {
-    max-width: 1080px;
-    margin: 0 auto;
+.sec-title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.75;
 }
 
 /*ボタン*/
@@ -76,6 +79,9 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding-top: 20px;
+    /* max-width: 1080px; */
+    width: 90%;
 }
 
 
@@ -92,6 +98,7 @@ a {
     align-items: center;
     max-width: 1080px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .bg-change {
@@ -137,30 +144,28 @@ a {
     position: relative;
 }
 
-.regiter_btn::after {
+.register_btn::before,
+.register_btn::after {
     content: "";
-    margin: auto;
     position: absolute;
-    top: 0;
+    top: 0 ;
     bottom: 0;
-    left: 1px;
-    width: 15px; /* 棒の長さ */
-    height: 3px; /* 棒の太さ */
-    background: #fff;
+    right: 10px;
+    margin: auto;
+}
+
+.register_btn::after {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--icon-light);
+    border-right: 2px solid var(--icon-light);
+    transform: rotate(45deg);
 }
 
 .register_btn::before {
-    content: "";
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 2px;
-    width: 13px;    /* くの字を山なりに見た時、左側の長さ */
-    height: 13px;   /* くの字を山なりに見た時、右側の長さ */
-    border-top: 3px solid #fff;     /* くの字を山なりに見た時、左側の太さと色 */
-    border-right: 3px solid #fff;   /* くの字を山なりに見た時、右側の太さと色 */
-    transform: rotate(45deg);    /* くの字の向き */
+    width: 14px;
+    height: 2px;
+    background-color: var(--icon-light);
 }
 
 /* .top .top__wave-img {
@@ -171,6 +176,11 @@ a {
  * こだわりセクション
  *============================*/
 
+.obsession {
+    max-width: 90%;
+    width: 90%;
+}
+
 .sec-title--dark {
     text-align: center;
 }
@@ -178,6 +188,7 @@ a {
 .flex02 {
     display: flex;
     margin: 0 auto;
+    margin-top: 18px;
 }
 
 .flex02__item {
@@ -196,17 +207,55 @@ a {
 .flex02 .flex02__item .flex02__item__img {
     border-radius: 20px;
     background: var(--bg-icon);
-    size: 10px;
 }
 
 /*========================================
  * 機能セクション
  *======================================*/
 
-.function .flex03 {
-    margin-left: auto;
+.function__top__border {
+    vertical-align: bottom;
+}
+
+.function {
+    color: #fff;
+    background: var(--bg-dark);
+    padding: 0 40px;
+}
+
+.flex03__item {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .flex03__item:nth-of-type(2) {
-    margin-right: auto;
+    flex-flow: row-reverse;
+}
+
+.flex03 .flex03__item__img {
+    width: 55%;
+}
+
+.flex03 .flex03__item {
+    margin-top: 48px;
+    
+}
+
+.flex03 .flex03__item .flex03__text__wrapper {
+    flex: none;
+    width: 40%;
+    margin: 0 50px;
+}
+
+/* フッター */
+.footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex04 {
+    display: flex;
+    justify-content: space-between;
 }
